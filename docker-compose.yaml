@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  travelapp-storybook-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: travelapp-storybook-docker
+    container_name: travelApp-storybook
+    restart: always 
+    ports:
+      - 80:80
